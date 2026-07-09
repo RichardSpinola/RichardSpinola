@@ -11,9 +11,9 @@ Outside of code, I enjoy working on game projects and music in my free time.
 ## 📊 GitHub Stats
 <table>
   <tr>
-    <td><img src="https://github-readme-stats.shion.dev/api?username=RichardSpinola&theme=transparent&hide_border=false&include_all_commits=false&count_private=false" width="100%" alt="GitHub stats" /></td>
-    <td><img src="https://github-readme-stats.shion.dev/api/top-langs/?username=RichardSpinola&theme=transparent&hide_border=false&include_all_commits=false&count_private=false&layout=compact" width="100%" alt="Top languages" /></td>
-    <td><img src="https://streak-stats.demolab.com/?user=RichardSpinola&theme=transparent&hide_border=false" width="100%" alt="GitHub streak" /></td>
+    <td><img src="https://github-readme-stats.shion.dev/api?username=RichardSpinola&hide_border=true&bg_color=0a192f&title_color=64b5f6&text_color=ccd6f6&icon_color=64b5f6&include_all_commits=false&count_private=false" width="100%" alt="GitHub stats" /></td>
+    <td><img src="https://github-readme-stats.shion.dev/api/top-langs/?username=RichardSpinola&hide_border=true&bg_color=0a192f&title_color=64b5f6&text_color=ccd6f6&layout=compact" width="100%" alt="Top languages" /></td>
+    <td><img src="https://streak-stats.demolab.com/?user=RichardSpinola&hide_border=true&background=0a192f&border=64b5f6&stroke=0a192f&ring=64b5f6&fire=64b5f6&currStreakNum=ccd6f6&sideNums=ccd6f6&currStreakLabel=64b5f6&sideLabels=8892b0&dates=8892b0" width="100%" alt="GitHub streak" /></td>
   </tr>
 </table>
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
