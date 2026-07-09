@@ -11,12 +11,13 @@ Outside of code, I enjoy working on game projects and music in my free time.
 ## 📊 GitHub Stats
 <table>
   <tr>
-    <td><img src="https://github-readme-stats.shion.dev/api?username=RichardSpinola&theme=transparent&hide_border=false&include_all_commits=false&count_private=false" width="100%" /></td>
-    <td><img src="https://github-readme-stats.shion.dev/api/top-langs/?username=RichardSpinola&theme=transparent&hide_border=false&include_all_commits=false&count_private=false&layout=compact" width="100%" /></td>
-    <td><img src="https://streak-stats.demolab.com/?user=RichardSpinola&theme=transparent&hide_border=false" width="100%" /></td>
+    <td><img src="https://github-readme-stats.shion.dev/api?username=RichardSpinola&theme=transparent&hide_border=false&include_all_commits=false&count_private=false" width="100%" alt="GitHub stats" /></td>
+    <td><img src="https://github-readme-stats.shion.dev/api/top-langs/?username=RichardSpinola&theme=transparent&hide_border=false&include_all_commits=false&count_private=false&layout=compact" width="100%" alt="Top languages" /></td>
+    <td><img src="https://streak-stats.demolab.com/?user=RichardSpinola&theme=transparent&hide_border=false" width="100%" alt="GitHub streak" /></td>
   </tr>
 </table>
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+
 
 ## Reach me
 
