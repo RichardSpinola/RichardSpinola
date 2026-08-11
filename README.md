@@ -1,6 +1,6 @@
 # Hey, I'm Richard
 
-I'm a Systems Analysis and Development (ADS) student at UCSAL, in Salvador, Brazil, currently building my foundation in Java and programming logic. I'm documenting my coursework here on GitHub as I go, semester by semester, and I'm looking for my first internship in software development.
+I'm a Systems Analysis and Development (ADS) student from Brazil, currently building my foundation in Java and programming logic. I'm documenting my coursework here on GitHub as I go, semester by semester, and I'm looking for my first internship in software development.
 
 Outside of code, I enjoy working on game projects and music in my free time.
 
