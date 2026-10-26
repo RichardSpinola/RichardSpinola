@@ -34,22 +34,15 @@
 <b>~/projects</b><!--P-->
 ├── own/
 │   └── <a href="https://github.com/RichardSpinola/simulador-carrinho-compras-java">simulador-carrinho-compras-java</a>
-│       Simulador de carrinho de compras
-│       feito em Java
+│       Simulador de carrinho de compra…
 ├── college/
 │   └── <a href="https://github.com/RichardSpinola/Faculdade">Faculdade</a>
-│       Meus primeiros passos na
-│       programação
+│       Meus primeiros passos na…
 └── ai-assisted/
     ├── <a href="https://github.com/RichardSpinola/makebench">makebench</a>
-    │   Visual editor for native Linux
-    │   desktop applications with Qt or
-    │   GTK 4, blocks or nodes, and your
-    │   own Python
+    │   Visual editor for native Linux…
     └── <a href="https://github.com/RichardSpinola/OpenStudyHub">OpenStudyHub</a>
-        Self-hosted academic hub for
-        students, classes, notes,
-        documents and collaboration.<!--/P-->
+        Self-hosted academic hub for…<!--/P-->
 </pre>
     </td>
     <td valign="top">

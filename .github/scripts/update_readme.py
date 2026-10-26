@@ -24,7 +24,7 @@ LEVELS = "·░▒▓█"
 AI_TOPIC = "ai-assisted"
 GROUPS = ["own", "college", AI_TOPIC]
 DESC_WIDTH = 32
-DESC_LINES = 4
+DESC_LINES = 1
 
 
 def repos():
