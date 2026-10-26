@@ -1,15 +1,19 @@
 """Refresh the language bars and the contribution heatmap in README.md.
 
 Reads public data only (GitHub REST API + the public contributions page) and
-rewrites the text between the <!--L-->..<!--/L--> and <!--A-->..<!--/A--> markers
+rewrites the text between the <!--L-->, <!--A--> and <!--P--> markers
+(languages, activity, project tree). Repos are grouped by topic: "ai-assisted" and
+"college"; any other repo is "own". AI-assisted repos are left out of the language bars.
 (markers sit mid-line so they never start a line inside the <pre> blocks).
 Usage: python update_readme.py <github-user> [README.md]
 """
 import datetime
+import html
 import json
 import os
 import re
 import sys
+import textwrap
 import urllib.request
 
 USER = sys.argv[1]
@@ -17,6 +21,15 @@ PATH = sys.argv[2] if len(sys.argv) > 2 else "README.md"
 BAR_WIDTH = 24
 WEEKS = 48
 LEVELS = "·░▒▓█"
+AI_TOPIC = "ai-assisted"
+GROUPS = ["own", "college", AI_TOPIC]
+DESC_WIDTH = 32
+DESC_LINES = 4
+
+
+def repos():
+    data = json.loads(get(f"https://api.github.com/users/{USER}/repos?per_page=100&type=owner"))
+    return [r for r in data if not r["fork"] and r["name"].lower() != USER.lower()]
 
 
 def get(url):
@@ -29,10 +42,9 @@ def get(url):
 
 
 def languages():
-    repos = json.loads(get(f"https://api.github.com/users/{USER}/repos?per_page=100&type=owner"))
     totals = {}
-    for repo in repos:
-        if repo["fork"] or repo["name"].lower() == USER.lower():
+    for repo in repos():
+        if AI_TOPIC in repo["topics"]:
             continue
         for lang, n in json.loads(get(repo["languages_url"])).items():
             totals[lang] = totals.get(lang, 0) + n
@@ -77,6 +89,29 @@ def activity():
     return f"{total} in {WEEKS} weeks\n" + "\n".join(rows)
 
 
+def projects():
+    groups = {g: [] for g in GROUPS}
+    for repo in sorted(repos(), key=lambda r: r["name"].lower()):
+        group = next((g for g in GROUPS[1:] if g in repo["topics"]), "own")
+        groups[group].append(repo)
+    groups = {g: rs for g, rs in groups.items() if rs}
+    lines = []
+    for gi, (group, rs) in enumerate(groups.items()):
+        last_group = gi == len(groups) - 1
+        lines.append(("└── " if last_group else "├── ") + f"{group}/")
+        pad = "    " if last_group else "│   "
+        for ri, repo in enumerate(rs):
+            last = ri == len(rs) - 1
+            url = f"https://github.com/{USER}/{repo['name']}"
+            lines.append(f'{pad}{"└── " if last else "├── "}<a href="{url}">{repo["name"]}</a>')
+            desc = textwrap.wrap(repo["description"] or "", DESC_WIDTH)
+            if len(desc) > DESC_LINES:
+                desc = desc[:DESC_LINES]
+                desc[-1] = desc[-1][:DESC_WIDTH - 1].rstrip(" ,.") + "…"
+            lines += [pad + ("    " if last else "│   ") + html.escape(d) for d in desc]
+    return "\n" + "\n".join(lines)
+
+
 def replace(text, tag, body):
     pattern = re.compile(rf"(<!--{tag}-->).*?(<!--/{tag}-->)", re.S)
     if not pattern.search(text):
@@ -87,4 +122,5 @@ def replace(text, tag, body):
 text = open(PATH, encoding="utf-8").read()
 text = replace(text, "L", languages())
 text = replace(text, "A", activity())
+text = replace(text, "P", projects())
 open(PATH, "w", encoding="utf-8").write(text)

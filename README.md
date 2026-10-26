@@ -31,43 +31,41 @@
   <tr>
     <td valign="top">
 <pre>
-<b>~/projects</b>
+<b>~/projects</b><!--P-->
 ├── own/
 │   └── <a href="https://github.com/RichardSpinola/simulador-carrinho-compras-java">simulador-carrinho-compras-java</a>
-│       shopping cart simulator in java
+│       Simulador de carrinho de compras
+│       feito em Java
 ├── college/
 │   └── <a href="https://github.com/RichardSpinola/Faculdade">Faculdade</a>
-│       my first steps in programming,
-│       semester by semester
+│       Meus primeiros passos na
+│       programação
 └── ai-assisted/
     ├── <a href="https://github.com/RichardSpinola/makebench">makebench</a>
-    │   visual editor for native linux
-    │   desktop apps with qt or gtk 4
+    │   Visual editor for native Linux
+    │   desktop applications with Qt or
+    │   GTK 4, blocks or nodes, and your
+    │   own Python
     └── <a href="https://github.com/RichardSpinola/OpenStudyHub">OpenStudyHub</a>
-        self-hosted academic hub for
-        students, classes and notes
+        Self-hosted academic hub for
+        students, classes, notes,
+        documents and collaboration.<!--/P-->
 </pre>
     </td>
     <td valign="top">
 <pre>
 <b>$ top-languages</b><!--L-->
-TypeScript <b>███████████████</b>░░░░░░░░░  61.9%
-Python     <b>███████</b>░░░░░░░░░░░░░░░░░  27.7%
-CSS        <b>██</b>░░░░░░░░░░░░░░░░░░░░░░   8.6%
-JavaScript <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   0.8%
-Java       <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   0.5%
-Shell      <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   0.3%
-other      <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   0.1%<!--/L-->
+Java       <b>████████████████████████</b> 100.0%<!--/L-->
 ────────────────────────────────────────────────────
-<b>$ git contributions</b> <!--A-->121 in 48 weeks
+<b>$ git contributions</b> <!--A-->127 in 48 weeks
      Nov Dec Jan Feb Mar Apr May Jun Jul Aug Sep Oct 
      ···········································░···█
 Mon  ···············░··························░·····
     ················░···············█····░········░· 
-Wed ···········································░··░▓ 
-    ·········░······················░·····░·······▒▓ 
-Fri ····································░·········░▓ 
-    ···········································░··▒▒ <!--/A-->
+Wed ···········································░··░▒ 
+    ·········░······················░·····░·······▒▒ 
+Fri ····································░·········░▒ 
+    ···········································░··░▒ <!--/A-->
 </pre>
     </td>
   </tr>
