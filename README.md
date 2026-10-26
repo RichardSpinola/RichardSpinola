@@ -12,6 +12,7 @@
 <b>|  _ &lt; </b>   from       brazil
 <b>|_| \_\</b>   stack      java, javascript, html, css
 <b>       </b>   tools      git, github
+<b>       </b>   ide        jetbrains, visual studio code
 <b>       </b>   motto      learn by building, even when it
 <b>       </b>              breaks ten times first
 <b>       </b>   seeking    first internship in software
