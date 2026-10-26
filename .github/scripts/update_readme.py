@@ -3,7 +3,7 @@
 Reads public data only (GitHub REST API + the public contributions page) and
 rewrites the text between the <!--L-->, <!--A--> and <!--P--> markers
 (languages, activity, project tree). Repos are grouped by topic: "ai-assisted" and
-"college"; any other repo is "own". AI-assisted repos are left out of the language bars.
+"college"; any other repo is "own". Language bars are split: repos written by me vs. "ai-assisted" ones.
 (markers sit mid-line so they never start a line inside the <pre> blocks).
 Usage: python update_readme.py <github-user> [README.md]
 """
@@ -41,17 +41,17 @@ def get(url):
         return r.read().decode()
 
 
-def languages():
+def bars(selected, top):
     totals = {}
-    for repo in repos():
-        if AI_TOPIC in repo["topics"]:
-            continue
+    for repo in selected:
         for lang, n in json.loads(get(repo["languages_url"])).items():
             totals[lang] = totals.get(lang, 0) + n
     total = sum(totals.values())
+    if not total:
+        return ["(none yet)"]
     ranked = sorted(totals.items(), key=lambda x: -x[1])
-    rows = ranked[:6]
-    rest = sum(n for _, n in ranked[6:])
+    rows = ranked[:top]
+    rest = sum(n for _, n in ranked[top:])
     if rest:
         rows.append(("other", rest))
     lines = []
@@ -59,6 +59,14 @@ def languages():
         pct = n * 100 / total
         filled = round(pct / 100 * BAR_WIDTH)
         lines.append(f"{name:<11}<b>{'█' * filled}</b>{'░' * (BAR_WIDTH - filled)} {pct:5.1f}%")
+    return lines
+
+
+def languages():
+    all_repos = repos()
+    mine = [r for r in all_repos if AI_TOPIC not in r["topics"]]
+    ai = [r for r in all_repos if AI_TOPIC in r["topics"]]
+    lines = ["(written by me)"] + bars(mine, 4) + [f"({AI_TOPIC})"] + bars(ai, 4)
     return "\n" + "\n".join(lines)
 
 

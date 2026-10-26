@@ -48,7 +48,14 @@
     <td valign="top">
 <pre>
 <b>$ top-languages</b><!--L-->
-Java       <b>████████████████████████</b> 100.0%<!--/L-->
+(written by me)
+Java       <b>████████████████████████</b> 100.0%
+(ai-assisted)
+TypeScript <b>███████████████</b>░░░░░░░░░  62.3%
+Python     <b>███████</b>░░░░░░░░░░░░░░░░░  27.9%
+CSS        <b>██</b>░░░░░░░░░░░░░░░░░░░░░░   8.7%
+JavaScript <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   0.8%
+other      <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   0.4%<!--/L-->
 ────────────────────────────────────────────────────
 <b>$ git contributions</b> <!--A-->129 in 48 weeks
      Nov Dec Jan Feb Mar Apr May Jun Jul Aug Sep Oct 
