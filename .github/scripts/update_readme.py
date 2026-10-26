@@ -2,7 +2,7 @@
 
 Reads public data only (GitHub REST API + the public contributions page) and
 rewrites the text between the <!--L-->, <!--A--> and <!--P--> markers
-(languages, activity, project tree). Repos are grouped by topic: "ai-assisted" and
+(languages, activity, project tree with the newest repos). Repos are grouped by topic: "ai-assisted" and
 "college"; any other repo is "own". Language bars are split: repos written by me vs. "ai-assisted" ones.
 (markers sit mid-line so they never start a line inside the <pre> blocks).
 Usage: python update_readme.py <github-user> [README.md]
@@ -25,6 +25,8 @@ AI_TOPIC = "ai-assisted"
 GROUPS = ["own", "college", AI_TOPIC]
 DESC_WIDTH = 32
 DESC_LINES = 1
+MAX_REPOS = 5
+TOP_LANGS = 5
 
 
 def repos():
@@ -66,7 +68,7 @@ def languages():
     all_repos = repos()
     mine = [r for r in all_repos if AI_TOPIC not in r["topics"]]
     ai = [r for r in all_repos if AI_TOPIC in r["topics"]]
-    lines = ["(written by me)"] + bars(mine, 4) + [f"({AI_TOPIC})"] + bars(ai, 4)
+    lines = ["(written by me)"] + bars(mine, TOP_LANGS) + [f"({AI_TOPIC})"] + bars(ai, TOP_LANGS)
     return "\n" + "\n".join(lines)
 
 
@@ -99,7 +101,8 @@ def activity():
 
 def projects():
     groups = {g: [] for g in GROUPS}
-    for repo in sorted(repos(), key=lambda r: r["name"].lower()):
+    newest = sorted(repos(), key=lambda r: r["created_at"], reverse=True)[:MAX_REPOS]
+    for repo in newest:
         group = next((g for g in GROUPS[1:] if g in repo["topics"]), "own")
         groups[group].append(repo)
     groups = {g: rs for g, rs in groups.items() if rs}
