@@ -50,7 +50,7 @@
 <b>$ top-languages</b><!--L-->
 Java       <b>████████████████████████</b> 100.0%<!--/L-->
 ────────────────────────────────────────────────────
-<b>$ git contributions</b> <!--A-->128 in 48 weeks
+<b>$ git contributions</b> <!--A-->129 in 48 weeks
      Nov Dec Jan Feb Mar Apr May Jun Jul Aug Sep Oct 
      ···········································░···█
 Mon  ···············░··························░·····
