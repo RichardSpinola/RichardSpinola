@@ -26,9 +26,10 @@ jobs:
         run: python .github/scripts/update_readme.py "${{ github.repository_owner }}"
       - name: Commit if changed
         run: |
-          if git diff --quiet; then exit 0; fi
+          git add -A
+          if git diff --cached --quiet; then exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -am "chore: refresh readme charts"
+          git commit -m "chore: refresh readme charts"
           git pull --rebase
           git push
