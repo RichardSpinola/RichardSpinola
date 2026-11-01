@@ -59,8 +59,18 @@ JavaScript <b></b>░░░░░░░░░░░░░░░░░░░░�
 Shell      <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   0.2%
 other      <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   0.1%<!--/L-->
 ────────────────────────────────────────────────────
-<b>$ git contributions</b></pre>
-<img src="assets/activity.svg" width="372" alt="contribution heatmap">
+<b>$ git contributions</b><!--A-->
+258 contributions · last 24 weeks
+    May   Jun     Jul     Aug       Sep     Oct
+      · · · · · · · · · · · · · · · · · · ░ · · · ▓ ·
+Mon · · · · · · · · · · · · · · · · · · ░ · · · · ▓
+    · · · · · · · ▒ · · · · ░ · · · · · · · · ░ · ·
+Wed · · · · · · · · · · · · · · · · · · ░ · · ░ ░ █
+    · · · · · · · ░ · · · · · ░ · · · · · · · ░ ░ ▓
+Fri · · · · · · · · · · · ░ · · · · · · · · · ░ ░ ·
+    · · · · · · · · · · · · · · · · · · ░ · · ░ ░ ░
+    less · ░ ▒ ▓ █ more<!--/A-->
+</pre>
     </td>
   </tr>
 </table>
