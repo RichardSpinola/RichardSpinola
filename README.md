@@ -35,15 +35,13 @@
 <b>~/projects</b><!--P-->
 ├── own/
 │   └── <a href="https://github.com/RichardSpinola/simulador-carrinho-compras-java">simulador-carrinho-compras-java</a>
-│       Simulador de carrinho de compra…
 ├── college/
 │   ├── <a href="https://github.com/RichardSpinola/ProjetoFinalFrontEnd">ProjetoFinalFrontEnd</a>
-│   └── <a href="https://github.com/RichardSpinola/ProjetoFinalSO">ProjetoFinalSO</a>
+│   ├── <a href="https://github.com/RichardSpinola/ProjetoFinalSO">ProjetoFinalSO</a>
+│   └── <a href="https://github.com/RichardSpinola/Faculdade">Faculdade</a>
 └── ai-assisted/
     ├── <a href="https://github.com/RichardSpinola/makebench">makebench</a>
-    │   Visual editor for native Linux…
-    └── <a href="https://github.com/RichardSpinola/OpenStudyHub">OpenStudyHub</a>
-        Self-hosted academic hub for…<!--/P-->
+    └── <a href="https://github.com/RichardSpinola/OpenStudyHub">OpenStudyHub</a><!--/P-->
 </pre>
     </td>
     <td valign="top">

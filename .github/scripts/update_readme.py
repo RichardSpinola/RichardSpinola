@@ -2,7 +2,7 @@
 
 Reads public data only (GitHub REST API + the public contributions page) and
 rewrites the text between the <!--L-->, <!--A--> and <!--P--> markers
-(languages, activity, project tree with the newest repos). Repos are grouped by topic: "ai-assisted" and
+(languages, activity, project tree with the newest repos per group). Repos are grouped by topic: "ai-assisted" and
 "college"; any other repo is "own". Language bars are split: repos written by me vs. "ai-assisted" ones.
 (markers sit mid-line so they never start a line inside the <pre> blocks).
 Usage: python update_readme.py <github-user> [README.md]
@@ -24,8 +24,8 @@ LEVELS = "·░▒▓█"
 AI_TOPIC = "ai-assisted"
 GROUPS = ["own", "college", AI_TOPIC]
 DESC_WIDTH = 32
-DESC_LINES = 1
-MAX_REPOS = 5
+DESC_LINES = 0  # description lines under each repo; 0 hides them
+MAX_REPOS = 5  # newest repos shown per topic group
 TOP_LANGS = 5
 
 
@@ -101,10 +101,10 @@ def activity():
 
 def projects():
     groups = {g: [] for g in GROUPS}
-    newest = sorted(repos(), key=lambda r: r["created_at"], reverse=True)[:MAX_REPOS]
-    for repo in newest:
+    for repo in sorted(repos(), key=lambda r: r["created_at"], reverse=True):
         group = next((g for g in GROUPS[1:] if g in repo["topics"]), "own")
-        groups[group].append(repo)
+        if len(groups[group]) < MAX_REPOS:
+            groups[group].append(repo)
     groups = {g: rs for g, rs in groups.items() if rs}
     lines = []
     for gi, (group, rs) in enumerate(groups.items()):
@@ -115,7 +115,7 @@ def projects():
             last = ri == len(rs) - 1
             url = f"https://github.com/{USER}/{repo['name']}"
             lines.append(f'{pad}{"└── " if last else "├── "}<a href="{url}">{repo["name"]}</a>')
-            desc = textwrap.wrap(repo["description"] or "", DESC_WIDTH)
+            desc = textwrap.wrap(repo["description"] or "", DESC_WIDTH) if DESC_LINES else []
             if len(desc) > DESC_LINES:
                 desc = desc[:DESC_LINES]
                 desc[-1] = desc[-1][:DESC_WIDTH - 1].rstrip(" ,.") + "…"
