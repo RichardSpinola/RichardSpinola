@@ -37,8 +37,8 @@
 │   └── <a href="https://github.com/RichardSpinola/simulador-carrinho-compras-java">simulador-carrinho-compras-java</a>
 │       Simulador de carrinho de compra…
 ├── college/
-│   └── <a href="https://github.com/RichardSpinola/Faculdade">Faculdade</a>
-│       Meus primeiros passos na…
+│   ├── <a href="https://github.com/RichardSpinola/ProjetoFinalFrontEnd">ProjetoFinalFrontEnd</a>
+│   └── <a href="https://github.com/RichardSpinola/ProjetoFinalSO">ProjetoFinalSO</a>
 └── ai-assisted/
     ├── <a href="https://github.com/RichardSpinola/makebench">makebench</a>
     │   Visual editor for native Linux…
@@ -50,7 +50,10 @@
 <pre>
 <b>$ top-languages</b><!--L-->
 (written by me)
-Java       <b>████████████████████████</b> 100.0%
+Java       <b>███████████████████</b>░░░░░  77.1%
+HTML       <b>███</b>░░░░░░░░░░░░░░░░░░░░░  14.0%
+CSS        <b>██</b>░░░░░░░░░░░░░░░░░░░░░░   6.3%
+JavaScript <b>█</b>░░░░░░░░░░░░░░░░░░░░░░░   2.6%
 (ai-assisted)
 TypeScript <b>█████████████</b>░░░░░░░░░░░  55.3%
 Python     <b>█████████</b>░░░░░░░░░░░░░░░  35.6%
@@ -60,10 +63,10 @@ Shell      <b></b>░░░░░░░░░░░░░░░░░░░░�
 other      <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   0.1%<!--/L-->
 ────────────────────────────────────────────────────
 <b>$ git contributions</b><!--A-->
-270 contributions · last 24 weeks
+279 contributions · last 24 weeks
     May   Jun     Jul     Aug       Sep     Oct
       · · · · · · · · · · · · · · · · · · ░ · · · ▓ ░
-Mon   · · · · · · · · · · · · · · · · · ░ · · · · ▓ ·
+Mon   · · · · · · · · · · · · · · · · · ░ · · · · ▓ ░
     · · · · · · · ▒ · · · · ░ · · · · · · · · ░ · ·
 Wed · · · · · · · · · · · · · · · · · · ░ · · ░ ░ █
     · · · · · · · ░ · · · · · ░ · · · · · · · ░ ░ ▓
