@@ -40,6 +40,7 @@
 │   ├── <a href="https://github.com/RichardSpinola/ProjetoFinalSO">ProjetoFinalSO</a>
 │   └── <a href="https://github.com/RichardSpinola/Faculdade">Faculdade</a>
 └── ai-assisted/
+    ├── <a href="https://github.com/RichardSpinola/berthline">berthline</a>
     ├── <a href="https://github.com/RichardSpinola/makebench">makebench</a>
     └── <a href="https://github.com/RichardSpinola/OpenStudyHub">OpenStudyHub</a><!--/P-->
 </pre>
@@ -48,27 +49,26 @@
 <pre>
 <b>$ top-languages</b><!--L-->
 (written by me)
-Java       <b>█████████████</b>░░░░░░░░░░░  53.9%
-HTML       <b>████████</b>░░░░░░░░░░░░░░░░  33.8%
-CSS        <b>███</b>░░░░░░░░░░░░░░░░░░░░░  10.4%
-JavaScript <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   1.8%
+Java       <b>███████████████</b>░░░░░░░░░  63.6%
+HTML       <b>███████</b>░░░░░░░░░░░░░░░░░  28.4%
+CSS        <b>██</b>░░░░░░░░░░░░░░░░░░░░░░   8.0%
 (ai-assisted)
-TypeScript <b>█████████████</b>░░░░░░░░░░░  55.3%
-Python     <b>█████████</b>░░░░░░░░░░░░░░░  35.6%
-CSS        <b>██</b>░░░░░░░░░░░░░░░░░░░░░░   7.8%
-JavaScript <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   1.0%
+TypeScript <b>█████████████</b>░░░░░░░░░░░  53.9%
+Python     <b>█████████</b>░░░░░░░░░░░░░░░  36.2%
+CSS        <b>██</b>░░░░░░░░░░░░░░░░░░░░░░   7.6%
+JavaScript <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   1.9%
 Shell      <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   0.2%
-other      <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   0.1%<!--/L-->
+other      <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   0.2%<!--/L-->
 ────────────────────────────────────────────────────
 <b>$ git contributions</b><!--A-->
-286 contributions · last 24 weeks
+319 contributions · last 24 weeks
     May   Jun     Jul     Aug       Sep     Oct
       · · · · · · · · · · · · · · · · · · ░ · · · ▓ ░
 Mon   · · · · · · · · · · · · · · · · · ░ · · · · ▓ ▒
       · · · · · · ▒ · · · · ░ · · · · · · · · ░ · · ·
 Wed   · · · · · · · · · · · · · · · · · ░ · · ░ ░ █ ·
-      · · · · · · ░ · · · · · ░ · · · · · · · ░ ░ ▓ ·
-Fri · · · · · · · · · · · ░ · · · · · · · · · ░ ░ ·
+      · · · · · · ░ · · · · · ░ · · · · · · · ░ ░ ▓ ░
+Fri   · · · · · · · · · · ░ · · · · · · · · · ░ ░ · ▒
     · · · · · · · · · · · · · · · · · · ░ · · ░ ░ ░
     less · ░ ▒ ▓ █ more<!--/A-->
 </pre>
