@@ -41,7 +41,6 @@
 │   └── <a href="https://github.com/RichardSpinola/Faculdade">Faculdade</a>
 └── ai-assisted/
     ├── <a href="https://github.com/RichardSpinola/berthline">berthline</a>
-    ├── <a href="https://github.com/RichardSpinola/makebench">makebench</a>
     └── <a href="https://github.com/RichardSpinola/OpenStudyHub">OpenStudyHub</a><!--/P-->
 </pre>
     </td>
@@ -53,22 +52,22 @@ Java       <b>███████████████</b>░░░░░�
 HTML       <b>███████</b>░░░░░░░░░░░░░░░░░  28.4%
 CSS        <b>██</b>░░░░░░░░░░░░░░░░░░░░░░   8.0%
 (ai-assisted)
-TypeScript <b>████████████</b>░░░░░░░░░░░░  51.2%
-Python     <b>█████████</b>░░░░░░░░░░░░░░░  36.9%
-CSS        <b>██</b>░░░░░░░░░░░░░░░░░░░░░░   7.2%
-JavaScript <b>█</b>░░░░░░░░░░░░░░░░░░░░░░░   4.2%
-Shell      <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   0.2%
-other      <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   0.2%<!--/L-->
+TypeScript <b>███████████████████</b>░░░░░  77.1%
+CSS        <b>███</b>░░░░░░░░░░░░░░░░░░░░░  10.9%
+Python     <b>█</b>░░░░░░░░░░░░░░░░░░░░░░░   6.1%
+JavaScript <b>█</b>░░░░░░░░░░░░░░░░░░░░░░░   5.3%
+Shell      <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   0.3%
+other      <b></b>░░░░░░░░░░░░░░░░░░░░░░░░   0.3%<!--/L-->
 ────────────────────────────────────────────────────
 <b>$ git contributions</b><!--A-->
-440 contributions · last 24 weeks
+273 contributions · last 24 weeks
     May       Jul     Aug       Sep     Oct     Nov
-    · · · · · · · · · · · · · · · · · ░ · · · ▓ ░ ·
-Mon · · · · · · · · · · · · · · · · ░ · · · · ▒ ░ ·
+    · · · · · · · · · · · · · · · · · ░ · · · ▒ ░ ·
+Mon · · · · · · · · · · · · · · · · ░ · · · · · ░ ·
     · · · · · ▒ · · · · ░ · · · · · · · · ░ · · · █
-Wed · · · · · · · · · · · · · · · · ░ · · ░ ░ █ · ░
-    · · · · · ░ · · · · · ░ · · · · · · · ░ ░ ▒ ░ ░
-Fri · · · · · · · · · ░ · · · · · · · · · ░ ░ · ▓ ·
+Wed · · · · · · · · · · · · · · · · ░ · · ░ · · · ░
+    · · · · · ░ · · · · · ░ · · · · · · · ░ · ░ ░ ░
+Fri · · · · · · · · · ░ · · · · · · · · · ░ · · ▓ ·
     · · · · · · · · · · · · · · · · ░ · · ░ ░ ░ ░ ·
     less · ░ ▒ ▓ █ more<!--/A-->
 </pre>
